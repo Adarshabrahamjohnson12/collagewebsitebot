@@ -111,3 +111,12 @@ footer {
     flex-direction: column;
   }
 }
+
+body {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+body.fade-in {
+  opacity: 1;
+}
