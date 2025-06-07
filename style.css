@@ -1,0 +1,113 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #003366;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header p {
+  font-size: 1.1em;
+}
+
+/* Navigation */
+nav {
+  background-color: #0055a5;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://images.unsplash.com/photo-1600195077076-0034f597d8a1') no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+  font-size: 3em;
+  background-color: rgba(0, 51, 102, 0.6);
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+/* Welcome Section */
+.welcome {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.welcome p {
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+/* Enter Button */
+.welcome button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #0055a5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.welcome button:hover {
+  background-color: #003366;
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2em;
+    padding: 10px 20px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+}
